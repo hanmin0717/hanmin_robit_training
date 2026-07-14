@@ -34,7 +34,7 @@ try:
         count = 0 # 인원수
         avg = 0 # 평균
         total = 0 # 전체 점수 합
-        max_score = -1 # 안전하게 -1로 시작하여 최고점을 비교하며 선택 (변수명 max는 파이썬 내장함수와 겹치지 않게 변경)
+        max_score = -1 # 안전하게 -1로 시작하여 최고점을 비교하며 선택
         
         for row in reader: # 저장된 인원만큼 for문이 돌기 때문에 한번 돌 때마다 인원수 +1
             name = row[0]
@@ -54,7 +54,7 @@ try:
         data = {"인원수": count, "평균": avg, "최고점": max_score} # json 데이터 만들기
         json.dump(data, outfile, ensure_ascii=False, indent=4) ## json 파일에 저장
 
-    print("\n🎉 모든 처리가 성공적으로 완료되었습니다!")
+    print("\n🎉 [과제 1] 모든 파일 처리가 성공적으로 완료되었습니다!")
 
-except FileNotFoundError: # 파일 이름이 잘못되거나 없을 때 예외처리 (with문 전체를 감싸서 완벽하게 잡아냅니다!)
-    print("[에러] students.csv 파일을 찾을 수 없습니다. 경로와 파일명을 다시 확인해 주세요.")
+except FileNotFoundError: # 파일 이름이 잘못되거나 없을 때 예외처리
+    print("[에러] students.csv 파일을 찾을 수 없습니다. '과제1' 폴더 안에 파일이 있는지 확인해 주세요.")
