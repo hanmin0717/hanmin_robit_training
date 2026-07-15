@@ -29,7 +29,6 @@ for bar in bars:
         fontweight='bold'
     )
 
-#레이아웃을 예쁘게 다듬고 그래프 이미지 파일로 저장하기
 plt.tight_layout()
 plt.savefig('programming_languages_chart.png', dpi=150)
-print("🎉 [과제 2] 그래프 이미지(programming_languages_chart.png)가 성공적으로 저장되었습니다!")
+print("그래프 이미지가 저장됌")
