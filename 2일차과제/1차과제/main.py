@@ -2,7 +2,6 @@ import csv
 import json
 
 try:
-    #윈도우 절대 경로를 직접 지정
     students_path = "D:/과제1/students.csv"
     clean_path = "D:/과제1/clean_students.csv"
     summary_path = "D:/과제1/summary.json"
